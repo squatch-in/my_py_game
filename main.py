@@ -17,5 +17,8 @@ if __name__ == "__main__":
     while True:
         screen.fill(color="black")
         pygame.display.flip()
-
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.QUIT()
+        
     main()
