@@ -1,4 +1,4 @@
-#!/home/jacob/my_py_game/venv/bin/python3
+#!/home/jacob/PycharmProjects/my_py_game/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
