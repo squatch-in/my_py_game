@@ -38,6 +38,11 @@ def main():
             obj.update(dt)
 
         for col in asteroids:
+            if shots.colision_detect(col):
+                shot.kill()
+                col.kill()
+
+        for col in asteroids:
             if player.colision_detect(col):
                 print("game over")
                 sys.exit()
