@@ -39,9 +39,9 @@ def main():
 
         for ast in asteroids:
             for bul in shots:
-                if bul.colision_detect(ast):
-                    print("hi")
-                    ast.kill()
+                if ast.colision_detect(bul):
+                      
+                    ast.split()
                     bul.kill()
 
         for col in asteroids:
