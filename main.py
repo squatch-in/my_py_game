@@ -37,10 +37,12 @@ def main():
         for obj in updatable:
             obj.update(dt)
 
-        for col in asteroids:
-            if shots.colision_detect(col):
-                shot.kill()
-                col.kill()
+        for ast in asteroids:
+            for bul in shots:
+                if bul.colision_detect(ast):
+                    print("hi")
+                    ast.kill()
+                    bul.kill()
 
         for col in asteroids:
             if player.colision_detect(col):
