@@ -26,7 +26,7 @@ def main():
 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     
-    ateroid_field = AsteroidField()
+    asteroid = AsteroidField()
     dt = 0
 
     while True:
